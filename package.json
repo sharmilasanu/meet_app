@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.24.0",
+    "nprogress": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -54,5 +56,16 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "enzyme": "^3.11.0",
     "gh-pages": "^3.2.3"
+  },
+  "description": "A progressive web app with the ability to work offline and a serverless backend developed using a TDD technique.\r The application uses the Google Calendar API to fetch upcoming events.\r The application is also hosted online by  AWS cloud provider to make it shareable and installable. \r It can be used even when the user is offline.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharmilasanu/meet_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharmilasanu/meet_app/issues"
   }
 }
