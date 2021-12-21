@@ -55,7 +55,9 @@
   "devDependencies": {
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "enzyme": "^3.11.0",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "jest-cucumber": "^3.0.1",
+    "puppeteer": "^13.0.0"
   },
   "description": "A progressive web app with the ability to work offline and a serverless backend developed using a TDD technique.\r The application uses the Google Calendar API to fetch upcoming events.\r The application is also hosted online by  AWS cloud provider to make it shareable and installable. \r It can be used even when the user is offline.",
   "main": "index.js",
