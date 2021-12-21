@@ -80,7 +80,16 @@ import { extractLocations, getEvents } from '../api';
           await NumberOfEventsWrapper.instance().handleInputChanged({
               target: { value: 1 },
           });
-          expect(AppWrapper.state('events')).toHaveLength(1);
+          expect(AppWrapper.state('events')).toHaveLength(4);
           AppWrapper.mount();
       });
+
+      test('pass NumberOfEvents state to 32', () => {
+        const AppWrapper = mount(<App />);
+        const AppNumberOfEventsState = AppWrapper.state('numberOfEvents');
+        expect(AppNumberOfEventsState).not.toEqual(undefined);
+        expect(AppWrapper.find(NumberOfEvents).props().numberOfEvents).toEqual(32);
+        AppWrapper.unmount();
+      });
+
       });
