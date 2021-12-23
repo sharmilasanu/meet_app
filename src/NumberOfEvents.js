@@ -1,31 +1,34 @@
 import React, { Component } from "react";
+import { ErrorAlert } from './Alert';
+import { Row, Col, Container } from "react-bootstrap";
 
 class NumberOfEvents extends Component {
-    
-    state  = {
-        no_of_events : 32,
-    }
-
-    handleInputChanged = (event) => {
-        const value = event.target.value;
-        
-          this.setState({
-            no_of_events : value
-        });
+    constructor(props){
+    super()
     }
     render() {
-        return <div className="numberOfEvents">
-           
+
+        return    <Container className="numberOfEvents">
+      
+      <Row>
+          <Col>
                 <label>Number of Events</label>
                 <input
-                
+                    value={this.props.numberOfEvents}
                     type="number"
                     className="events_number"
-                    onChange={this.handleInputChanged}
+                    onChange={(e) => this.props.updateNumberOfEvents(e)}
                 />
-            </div>
-            
-       
+           </Col>
+        </Row>
+
+        <Row>
+          <Col>
+          <ErrorAlert text={this.props.errorText} />
+          </Col>
+        </Row>
+           </Container> 
+        
     }
 }
 export default NumberOfEvents;
