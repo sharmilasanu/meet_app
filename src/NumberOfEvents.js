@@ -12,7 +12,7 @@ class NumberOfEvents extends Component {
       
       <Row>
           <Col>
-                <label>Number of Events</label>
+                 
                 <input
                     value={this.props.numberOfEvents}
                     type="number"
